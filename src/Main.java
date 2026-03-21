@@ -105,7 +105,8 @@ public class Main {
         int n1= scanner.nextInt();//2nd task
         int[] arr1= new int [n1];//2nd task
         fillArray(arr1,0,scanner);//2nd task
-        float average=findSum(arr1,0)/n1;
+        double sum=findSum(arr1,0);
+        double average=sum/n1;
         System.out.println(average);//2nd task
         System.out.println("Number 7 is:");
         isPrime(7);//3rd task

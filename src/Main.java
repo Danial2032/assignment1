@@ -53,6 +53,7 @@ public class Main {
     }
     public static void printArray(int[] arr,int index){
         if(index==arr.length){
+            System.out.println();
             return;
         }
         System.out.print(arr[index]+ " ");
@@ -85,7 +86,7 @@ public class Main {
         if(str==null||str.isEmpty()){
             return 0;
         }
-        return CountOfCharInString(str.substring(1)+1);
+        return 1+CountOfCharInString(str.substring(1));
     }
     public static boolean IsOnlyDigits(String str,int index){
         if(index==str.length()){
@@ -99,8 +100,8 @@ public class Main {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digits line by line:");
-        printDigits(13749);//1st task
+        System.out.println("Digits line by line of 2026 number:");
+        printDigits(2026);//1st task
         System.out.println("Write number of elements and then the elements to find average:");
         int n1= scanner.nextInt();//2nd task
         int[] arr1= new int [n1];//2nd task
@@ -110,8 +111,7 @@ public class Main {
         System.out.println(average);//2nd task
         System.out.println("Number 7 is:");
         isPrime(7);//3rd task
-        System.out.println("Factorial of 5 is:");
-        factorial(5);//4th task
+        System.out.println("Factorial of 5 is:"+factorial(5));//4th task
         System.out.println("Fibonacci number of 10 is:"+FibonacciNum(10));//5th task
         System.out.println("2 in the power of 10 is:"+power(2,10));//6th task
         System.out.println("Write number of elements and then the elements:");
@@ -128,7 +128,7 @@ public class Main {
         else{//8th task
             System.out.println("NO");//8th task
         }//8th task
-        System.out.println("To make abcde were used"+CountOfCharInString("abcde")+"characters");//9th task
+        System.out.println("To make abcde were used: " +CountOfCharInString("abcde")+" characters");//9th task
         System.out.println("GCD of 36 and 72 is:"+GCDOf2Num(36,72));//10th task
     }
 }

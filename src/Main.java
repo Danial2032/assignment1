@@ -9,7 +9,7 @@ public class Main {
         printDigits(number/10);
         System.out.println(digit);
     }
-    static int i=2;//for isPrime
+    static int i=2;
     public static void isPrime(int numb){
         if(i==numb/2+1){
             System.out.println("Prime");

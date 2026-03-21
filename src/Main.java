@@ -68,10 +68,10 @@ public class Main {
         return sum+ num;
     }
     public static int FibonacciNum(int number){
-        if(number==1){
+        if(number==0){
             return 0;
         }
-        if (number==2){
+        if (number==1){
             return 1;
         }
         return FibonacciNum(number-1)+FibonacciNum(number-2);

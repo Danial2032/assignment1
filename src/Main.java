@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void printDigits(int number){
-        int rem=number%10;
+        int digit=number%10;
         if(number==0){
             return;
         }
         printDigits(number/10);
-        System.out.println(rem);
+        System.out.println(digit);
     }
     static int i=2;//for isPrime
     public static void isPrime(int numb){

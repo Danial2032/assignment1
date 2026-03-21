@@ -105,16 +105,17 @@ public class Main {
         int n1= scanner.nextInt();//2nd task
         int[] arr1= new int [n1];//2nd task
         fillArray(arr1,0,scanner);//2nd task
-        System.out.println(findSum(arr1,0)/n1);//2nd task
+        float average=findSum(arr1,0)/n1;
+        System.out.println(average);//2nd task
         System.out.println("Number 7 is:");
         isPrime(7);//3rd task
         System.out.println("Factorial of 5 is:");
         factorial(5);//4th task
         System.out.println("Fibonacci number of 10 is:"+FibonacciNum(10));//5th task
         System.out.println("2 in the power of 10 is:"+power(2,10));//6th task
+        System.out.println("Write number of elements and then the elements:");
         int n2= scanner.nextInt();//7th task
         int[] arr2= new int [n2];//7th task
-        System.out.println("Write number of elements and then the elements:");
         fillArray(arr2,0, scanner);//7th task
         reverseArray(arr2,0,n2-1);//7th task
         System.out.println("The reversed array:");

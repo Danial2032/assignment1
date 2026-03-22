@@ -100,8 +100,11 @@ public class Main {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digits line by line of 2026 number:");
-        printDigits(2026);//1st task
+        System.out.println("Enter number to print only digits: ");
+        int task1= scanner.nextInt();
+        System.out.println("Digits line by line of" + task1 + " number:");
+        printDigits(task1);//1st task
+
         System.out.println("Write number of elements and then the elements to find average:");
         int n1= scanner.nextInt();//2nd task
         int[] arr1= new int [n1];//2nd task
@@ -109,11 +112,25 @@ public class Main {
         double sum=findSum(arr1,0);
         double average=sum/n1;
         System.out.println("Average is: "+average);//2nd task
-        System.out.println("Number 7 is:");
-        isPrime(7);//3rd task
-        System.out.println("Factorial of 5 is:"+factorial(5));//4th task
-        System.out.println("10th Fibonacci number is:"+FibonacciNum(10));//5th task
-        System.out.println("2 in the power of 10 is:"+power(2,10));//6th task
+
+        System.out.println("Enter number");//3rd task
+        int task3= scanner.nextInt();
+        System.out.println("Number "+ task3+ " is:");
+        isPrime(task3);//3rd task
+
+        System.out.println("Enter your number");//4th task
+        int task4=scanner.nextInt();
+        System.out.println("Factorial of " + task4+  " is:"+factorial(task4));//4th task
+
+        System.out.println("Enter your number");
+        int task5=scanner.nextInt();
+        System.out.println(task5+"th Fibonacci number is: "+FibonacciNum(task5));//5th task
+
+        System.out.println("Enter your base and exponent");
+        int base=scanner.nextInt();
+        int exponent= scanner.nextInt();
+        System.out.println(base+" in the power of "+exponent+ " is: "+power(base,exponent));//6th task
+
         System.out.println("Write number of elements and then the elements:");
         int n2= scanner.nextInt();//7th task
         int[] arr2= new int [n2];//7th task
@@ -121,14 +138,23 @@ public class Main {
         reverseArray(arr2,0,n2-1);//7th task
         System.out.println("The reversed array:");
         printArray(arr2,0);//7th task
-        System.out.println("Is '123' has only digits");
-        if(IsOnlyDigits("123",0)){//8th task
+
+        System.out.println("Enter your string.I will write YES if your string contains only digits: ");//8th task
+        String task8=scanner.next();
+        if(IsOnlyDigits(task8,0)){//8th task
             System.out.println("YES");//8th task
         }//8th task
         else{//8th task
             System.out.println("NO");//8th task
-        }//8th task
-        System.out.println("To make abcde were used: " +CountOfCharInString("abcde")+" characters");//9th task
-        System.out.println("GCD of 36 and 72 is:"+GCDOf2Num(36,72));//10th task
+        }
+
+        System.out.println("Enter your string. I will count number of characters.");
+        String task9=scanner.next();
+        System.out.println("To make "+task9+" were used: " +CountOfCharInString(task9)+" characters");//9th task
+
+        System.out.println("Enter two numbers");
+        int number1=scanner.nextInt();
+        int number2=scanner.nextInt();
+        System.out.println("GCD of "+number1+" and "+number2+" is: "+GCDOf2Num(number1,number2));//10th task
     }
 }

@@ -18,6 +18,7 @@ I got every element of array and added to the sum. After to get average I divide
 Task 3:
 
 ![image](https://github.com/Danial2032/assignment1/tree/master/image3.png)
+![image](https://github.com/Danial2032/assignment1/tree/master/image11.png)
 
 I used trial division. By using this alghorithm it is easy to find prime numbers.
 
@@ -52,6 +53,7 @@ Part 3:
 Task 8:
 
 ![image](https://github.com/Danial2032/assignment1/tree/master/image8.png)
+![image](https://github.com/Danial2032/assignment1/tree/master/image12.png)
 
 I used .isDigit() to every elment of the string.
 
